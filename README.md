@@ -14,6 +14,7 @@ A desktop application for analyzing bank transactions, scoring customers based o
 * [Installation](#installation)
 * [Usage](#usage)
 * [Project Structure](#project-structure)
+* [Dataset](#dataset)
 * [Screenshots & Diagrams](#screenshots--diagrams)
 * [License](#license)
 
@@ -66,7 +67,7 @@ The application follows the **Model-View-Controller (MVC)** pattern:
 1. Clone the repository:
 
 ```bash
-git https://github.com/Omarkouta73/bank_transaction_analyzer.git
+git clone https://github.com/Omarkouta73/bank_transaction_analyzer.git
 cd bank_transaction_analyzer
 ```
 
@@ -104,6 +105,15 @@ The status bar shows progress and messages, and dialog boxes provide success/err
 
 ---
 
+## Dataset
+
+The example dataset used (`data/Fraud_Detection.csv`) is based on the **[PaySim 1 financial transaction dataset on Kaggle](https://www.kaggle.com/datasets/ealaxi/paysim1)**.
+
+* **Kaggle link:** [https://www.kaggle.com/datasets/ealaxi/paysim1](https://www.kaggle.com/datasets/ealaxi/paysim1)
+* You can download the original dataset and place it in the `data/` folder to run the application.
+
+---
+
 ## Project Structure
 
 ```
@@ -122,7 +132,7 @@ bank-transaction-analyzer/
 │   ├── transaction_flagger.py
 │   └── report_generator.py
 ├── data/
-│   ├── Fraud_Detection.csv          # Example dataset
+│   ├── Fraud_Detection.csv          # Example dataset from Kaggle
 │   ├── usecase.png                  # UML use case diagram
 │   └── class_diagram.png            # Class diagram
 ├── outputs/
@@ -130,7 +140,6 @@ bank-transaction-analyzer/
 │   ├── flagged_transactions.csv     # Flagged transactions report
 │   └── report.txt                   # Full text report
 └── README.md
-
 ```
 
 ---
@@ -142,9 +151,3 @@ bank-transaction-analyzer/
 
 **Class Diagram:**
 ![Class Diagram](data/class_diagram.png)
-
----
-
-## License
-
-This project is licensed under the MIT License.
